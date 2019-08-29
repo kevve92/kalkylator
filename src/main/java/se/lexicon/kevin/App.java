@@ -23,6 +23,8 @@ public class App
           System.out.println("enter a operator: \n1: add \n2: sub\n3: div \n4: mult \n ");
           int ope = inp.nextInt();
 
+
+
           System.out.println("enter your second number");
           num2 = inp.nextDouble();
 
@@ -30,6 +32,7 @@ public class App
           {
               case 1:
                   System.out.println(add(num1, num2));
+
                   break;
               case 2:
                   System.out.println(sub(num1, num2));
@@ -55,24 +58,21 @@ public class App
                     case 0:
                         keepAlive = false;
                         break;
-
                 }
-
-
       }
-
-
     }//end of main;
 
 
 
 
-    public static double add(double num1, double num2){
-        double result = num1 + num2;
+    public static double add( double num1, double num2){
+
+        double result = num1+num2;
         return result;
 
 
     }//end of add
+
     public static double sub(double num1, double num2){
         double result = num1 - num2;
         return result;
@@ -96,8 +96,5 @@ public class App
         double result = num1*num2;
         return result;
     }//end of mult
-
-
-
 
 }//end of app
