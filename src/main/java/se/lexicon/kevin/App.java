@@ -72,6 +72,9 @@ public class App
 
 
     }//end of add
+    public static int add(String[][] array){
+     array
+    }
 
     public static double sub(double num1, double num2){
         double result = num1 - num2;
