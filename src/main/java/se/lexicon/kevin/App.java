@@ -1,12 +1,7 @@
 package se.lexicon.kevin;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ) {
@@ -77,20 +72,30 @@ public class App
         return result;
 
 
-    }
+    }//end of add
     public static double sub(double num1, double num2){
         double result = num1 - num2;
         return result;
 
-    }
+    }//end of sub
     public static double div(double num1, double num2){
-        double result = num1 / num2;
+        double result;
+        if (num2 == 0)
+        {
+            System.out.println("you cant divide it by zero");
+            result = 0;
+        }
+        else {
+            result = num1 / num2;
+        }
+
         return result;
-    }
+    }//end of div
+
     public static double mult(double num1, double num2){
         double result = num1*num2;
         return result;
-    }
+    }//end of mult
 
 
 
