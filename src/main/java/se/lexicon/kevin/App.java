@@ -12,12 +12,8 @@ public class App
       while (keepAlive)
       {
 
-          double num1;
-          double num2;
-
-
           System.out.println("enter your first number");
-          num1 = inp.nextDouble();
+          double num1 = inp.nextDouble();
 
 
           System.out.println("enter a operator: \n1: add \n2: sub\n3: div \n4: mult \n ");
@@ -26,7 +22,7 @@ public class App
 
 
           System.out.println("enter your second number");
-          num2 = inp.nextDouble();
+          double num2 = inp.nextDouble();
 
           switch (ope)
           {
@@ -72,9 +68,7 @@ public class App
 
 
     }//end of add
-    public static int add(String[][] array){
-     array
-    }
+
 
     public static double sub(double num1, double num2){
         double result = num1 - num2;
